@@ -2,7 +2,7 @@ const button = document.querySelector(".content .button");
 const form = document.querySelector(".content form");
 const input = document.querySelector("input");
 const message = document.querySelector(".error-message");
-const icon = document.querySelector(".error-icon .hidden");
+const icon = document.querySelector(".error-icon");
 const inputValue = input.value.trim();
 
 button.addEventListener("click", validate)
