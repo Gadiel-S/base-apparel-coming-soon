@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: linear-gradient();
+}
+main {
+  display: flex;
+}
+.logodesk {
+  margin: 3rem 0 7rem 10rem;
+}
+.title1 {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+  font-size: 4rem;
+  margin: 0 2rem 0 10rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+}
+.title2 {
+  color: hsl(0, 6%, 24%);
+  font-size: 4rem;
+  margin: 0 2rem 0 10rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-weight: 400;
+}
+.title3 {
+  color: hsl(0, 6%, 24%);
+  font-size: 4rem;
+  margin: 0 2rem 1.5rem 10rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-weight: 400;
+}
+.description {
+  margin: 0 22rem 2rem 10rem;
+  color: hsl(0, 36%, 70%);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.form-block {
+  margin-left: 10rem;
+  align-items: center;
+}
+.form-block .label {
+  padding: 1rem 0 1rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid hsl(0, 36%, 70%);
+  width: 23rem;
+}
+.form-block .label::placeholder {
+  color: hsl(0, 36%, 80%);
+}
+.form-block .button {
+  background-color: hsl(0, 93%, 80%);
+  padding: 0.85rem 2.5rem;
+  border-radius: 4rem;
+  border: none;
+  position: relative;
+  bottom: 3.15rem;
+  left: 19rem;
+  cursor: pointer;
+}
+.form-block .error-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+  bottom: 3rem;
+  left: 10.5rem;
+}
+.error-message {
+  margin: -2.5rem 0 0 2rem;
+  font-size: 0.75rem;
+  color: hsl(0, 36%, 60%);
+}
+
+.hidden {
+  display: none;
+}
+.logomobile {
+  display: none;
+}
+footer {
+  position: absolute;
+  bottom: 2rem;
+  left: 10rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 1300px) {
+  .content .description {
+    margin-right: 3rem;
+  }
+  .content .form-block .label {
+    width: 21rem;
+  }
+  .content .form-block .button {
+    left: 17rem;
+  }
+  .content .form-block .error-icon {
+    left: 8.5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .logodesk,
+  .title1,
+  .title2,
+  .title3,
+  .description,
+  .form-block {
+    margin-left: 2rem;
+  }
+  .content .form-block .label {
+    width: 20rem;
+  }
+  .content .form-block .button {
+    left: 16rem;
+  }
+  .content .form-block .error-icon {
+    left: 7.5rem;
+  }
+  footer {
+    left: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logodesk,
+  .title1,
+  .title2,
+  .title3,
+  .description,
+  .form-block {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  footer {
+    left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    flex-direction: column-reverse;
+  }
+  .content {
+    text-align: center;
+  }
+  .logomobile {
+    display: inherit;
+    margin: 2rem;
+  }
+  .logo-mob {
+   width: 7rem;
+  }
+  .image {
+    width: 100%;
+    max-height: 20rem;
+  }
+  .title1, .title2, .title3 {
+    font-size: 3rem;
+  }
+  .title1 {
+    margin-top: 3rem;
+  }
+  .title2, .title3 {
+    font-weight: 600;
+    letter-spacing: 0.75rem;
+  }
+  .description {
+    margin: 0 2rem 2rem;
+  }
+  .form-block .label {
+    padding: 1rem 2rem;
+  }
+  .content .form-block .button {
+    left: 10rem;
+    padding: 0.8rem 1.5rem
+  }
+  .content .form-block .error-icon {
+    left: 4rem;
+  }
+  .error-message {
+    margin: -2.5rem 0 0 -6.5rem;
+  }
+  .logodesk {
+    display: none;
+  }
+  footer {
+    position: relative;
+    bottom: -1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .title1, .title2, .title3 {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 0.8rem;
+  }
+  .form-block .label {
+    max-width: 17rem;
+    padding: 1rem 2rem;
+  }
+  .content .form-block .button {
+    left: 7.6rem;
+    padding: 0.8rem 1.5rem
+  }
+  .content .form-block .error-icon {
+    left: 1.5rem;
+  }
+  footer {
+    left: 0.5rem;
+    max-width: 12rem;
+  }
+}
