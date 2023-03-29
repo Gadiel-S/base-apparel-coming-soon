@@ -67,6 +67,9 @@ main {
   left: 19rem;
   cursor: pointer;
 }
+.form-block .button:hover {
+  background-color: hsl(0, 93%, 90%);
+}
 .form-block .error-icon {
   width: 1.5rem;
   height: 1.5rem;
